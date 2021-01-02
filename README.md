@@ -1,2 +1,2 @@
 # pw-generator
-Creating an application that generates a random password with various stipulations.
+Here, I've created an application that generates a random password with various stipulations.
