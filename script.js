@@ -25,7 +25,7 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 // ***********************  function here  ********************************************
-// write a function called generatePassword which will have a series of prompts...
+// write a function called generatePassword which will have a series of prompts for user input
 function generatePassword() {
 
 // WHEN prompted for password criteria
@@ -34,45 +34,82 @@ function generatePassword() {
 // WHEN prompted for the length of the password
 // THEN I choose a length of at least 8 characters and no more than 128 characters
 
-// we have to ask the user how many characters they want in the password
-
+// Asking the user how many characters they want in their password.
 var charAmount = prompt('How many characters would you like your password to have? It must have between 8 and 128 characters.');
+
+// Confirming if user wants special characters.
+var charSpecial = confirm('Click OK if you want to include special characters.');
+// listing special characters to choose from.
+var randomSpecial = ['!', '#', '$', '%', '^', '&', '*', '(', ')', '+', '-', '.', '/', ':', ';', '<', '>', '?', '{', '}'];
+
+// Confirming if user wants numerical characters.
+var charNumerical = confirm('Click OK if you want to include numerical characters.');
+// listing all numerals.
+var numbers = ['1','2','3','4','5','6','7','8','9','0'];
+
+// Confirming if user wants uppercase characters.
+var charUpper = confirm('Click OK if you want to include uppercase characters.');
+// Listing all uppercase letters.
+var Upper = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+
+// Confirming if user wants lowercase letters.
+var charLower = confirm('Click OK if you want to include lowercase characters.');
+var Lower = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+
+
+
+// for (var i = 0; i = charAmount; i++) {
+//    var charSpecial = randomSpecial[Math.floor(Math.random() * charAmount)];
+//  }
+
+
 
 // WHEN I answer each prompt
 // THEN my input should be validated and at least one character type should be selected
-if (charAmount >= 8 && charAmount <= 128){
-  
-}
+              //if (charAmount >= 8 && charAmount <= 128){
+               // passwordText.value = charAmount;
+              //}
 
 
-// we need to check to make sure it is between 8 and 128 characters
+// we need to check to make sure user input is between 8 and 128 characters
 // otherwise we tell user to fix their input.
 if (charAmount < 8){
   alert('Your password must have at least 8 characters. Please try again.');
 } else if (charAmount > 128){
   alert('Your password must have fewer than 128 characters. Please try again.');
 }
-
 // WHEN prompted for character types to include in the password
 // THEN I choose lowercase, uppercase, numeric, and/or special characters
 
 // confirm if the user wants special characters
-  var charSpecial = confirm('Click OK if you want to include special characters.');
-// confirm if the user wants numeric characters
-  var charNumerical = confirm('Click OK if you want to include numerical characters.');
-// confirm if the user wants uppercase
-  var charUpper = confirm('Click OK if you want to include uppercase characters.');
-// confirm if the user wants lowercase
-  var charLower = confirm('Click OK if you want to include lowercase characters.');
+  // var charSpecial = confirm('Click OK if you want to include special characters.');
 
+                // if (charSpecial){
+                //   passwordText.value = (charAmount + charSpecial);
+                // }
+// confirm if the user wants numeric characters
+  // var charNumerical = confirm('Click OK if you want to include numerical characters.');
+
+                // if (charNumerical){
+                  //passwordText.value = (charAmount + charSpecial + charNumerical);
+                //}
+// confirm if the user wants uppercase
+  // var charUpper = confirm('Click OK if you want to include uppercase characters.');
+
+                //if (charUpper){
+                //  passwordText.value = (charAmount + charSpecial + charNumerical + charUpper);
+                //}
+// confirm if the user wants lowercase
+  // var charLower = confirm('Click OK if you want to include lowercase characters.');
+                // if (charLower) {
+                // passwordText.value = (charAmount + charSpecial + charNumerical + charUpper + charLower);
+                // }
   // we need to show an error if they gave us no characters to choose from
   // if no characters are chosen, the user must click the generate password button again (no more code needed).
 if (charSpecial == false && charNumerical == false && charUpper == false && charLower == false){
-    alert('You must select at least one character type for your password. Please try again.');
-  }
+     alert('You must select at least one character type for your password. Please try again.');
+   }
 }
-
-
 
 
 // WHEN I answer each prompt
@@ -82,7 +119,12 @@ if (charSpecial == false && charNumerical == false && charUpper == false && char
 // WHEN all prompts are answered
 // THEN a password is generated that matches the selected criteria
 // from all the characters chosen, use one randomly and add it to our password x number of times
-// ... is this the math.Random
+// consulting Rock Paper Scissors game code, I need variable(s) for randomly selecting characters
+// make a variable that chooses special characters randomly
+// make a variable that chooses numerical characters randomly
+// make a variable that chooses uppercase characters randomly
+// make a variable that chooses lowercase variables randomly
 
-// ***********************  function ends here  ********************************************
+// ^^^ put these in a loop that generates characters until the user's chosen number of pw characters is met.
 
+// ***********************  function ends here  **********************************// 
