@@ -8,7 +8,7 @@ This application is designed to generate a secure password using a randomizing m
 
 The password generator is very simple to use. Simply click the red Generate Password button, and a series of prompts will appear to guide you through creating a secure password. Your password may include anywhere from 8 to 128 characters, and may incorporate any combination of special characters, numerical characters, uppercase characters, and lowercase characters. Of course, the greater variety of characters, the more secure your password will be! 
 
-![Homepage](images/password-generator-home.jpg)
+![Homepage](images/password-generator-home.png)
 
 ## License 
 
