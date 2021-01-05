@@ -10,6 +10,10 @@ The password generator is very simple to use. Simply click the red Generate Pass
 
 ![Homepage](images/password-generator-home.png)
 
+If you accidentally select the wrong amount of characters or wish to start over, the series of prompts can be completed as many times as you wish!
+
+![Error Message](images/error-message.png)
+
 ## License 
 
 Copyright (c) [2021] [Greg Riss]
