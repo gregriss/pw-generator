@@ -1,7 +1,3 @@
-// Assignment Code
-
-
-
 // Writing a password to the #password input
 
 function writePassword() {
@@ -59,11 +55,11 @@ function generatePassword() {
     // clear the alerts, user has to start over.
      return;
     }
-   
-    // add contingency for if user types in not numbers
+   // if the user enters no character amount, they must start over.
     else if (charAmount === null){  
-      // return;
+      return;
     }
+    // if between 8 and 128 characters, alerts the user how many charcters their password will be.
     else {
         alert('Great! We will make a password with ' + charAmount + ' characters.');
     };
@@ -92,6 +88,7 @@ function generatePassword() {
           return;
         }
 
+      // The remaining 'else if' statement account for all possible combinations of character types.
       // If the user wants all 4 character types...
     else if (wantUpper && wantLower && wantSpecial && wantNumerical){
       // make a list of random characters as long as the user asks for 
@@ -112,6 +109,7 @@ function generatePassword() {
         }
         return password.join("");
       }
+      // If the user wants uppercase, lowercase, and numbers
     else if (wantUpper && wantLower && wantNumerical && wantSpecial === false){
         for (var i = 0; i < charAmount; i++){
           randomChar = upperLowerNumerical[Math.floor(Math.random() * upperLowerNumerical.length)];
@@ -202,23 +200,10 @@ function generatePassword() {
           password.push(randomChar);
         }
         return password.join("");
-      }
-
+      };
   };
 
 // WHEN all prompts are answered (charAmount, wantUpper, wantLower, wantSpecial, wantNumerical)
-// THEN a password is generated that matches the selected criteria 
+// THEN a password is generated that matches the selected criteria (return password.join(""))
 
-// WHEN I answer each prompt
-// THEN my input should be validated and at least one character type should be selected
-
-
-// from all characters chosen, use one randomly >> [Math.floor(Math.random() * allChar.length)] << and add it to our password x (charAmount) number of times
-
-// make a variable that chooses special characters randomly
-// make a variable that chooses numerical characters randomly
-// make a variable that chooses uppercase characters randomly
-// make a variable that chooses lowercase variables randomly
-
-// ^^^ put these in a loop that generates characters until the user's chosen number of pw characters is met.
-// put each password character into an array, log the array/return the array on the page.
+// from all characters chosen, use one randomly *** [Math.floor(Math.random() * allChar.length)] *** and add it to our password x (charAmount) number of times
