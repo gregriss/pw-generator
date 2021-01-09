@@ -2,11 +2,11 @@
 
 ## Description
 
-This application is designed to generate a secure password using a randomizing method and including various character types.  
+This Password Generator application is designed to generate a secure password using a randomizing method and including various character types.  
 
 ## Usage
 
-The password generator is very simple to use. Simply click the red Generate Password button, and a series of prompts will appear to guide you through creating a secure password. Your password may include anywhere from 8 to 128 characters, and may incorporate any combination of special characters, numerical characters, uppercase characters, and lowercase characters. Of course, the greater variety of characters, the more secure your password will be! 
+The password generator is very simple to use. Simply click the red Generate Password button, and a series of prompts will appear to guide you through creating a secure password. Your password may include anywhere from 8 to 128 characters, and may incorporate any combination of special characters, numerical characters, uppercase characters, and lowercase characters. Of course, the greater variety of characters, the more secure your password will be! The application is deployed at https://gregriss.github.io/pw-generator/
 
 ![Homepage](images/password-homepage.png)
 
